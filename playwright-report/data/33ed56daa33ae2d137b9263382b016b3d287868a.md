@@ -1,0 +1,366 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - heading "QA Practice" [level=3] [ref=e5]:
+      - link "QA Practice" [ref=e6] [cursor=pointer]:
+        - /url: /
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link "Ecommerce - Login, Add to Cart, Submit order, Logout" [ref=e9] [cursor=pointer]:
+          - /url: /auth_ecommerce
+      - listitem [ref=e10]:
+        - link "Spot the BUGS CHALLENGE" [ref=e11] [cursor=pointer]:
+          - /url: /bugs-form
+      - listitem [ref=e12]:
+        - link "GraphQL Testing" [ref=e13] [cursor=pointer]:
+          - /url: /graphql-testing
+      - listitem [ref=e14]:
+        - link "API Testing" [ref=e15] [cursor=pointer]:
+          - /url: /api-testing
+      - listitem [ref=e16]:
+        - link "Products List - Shop" [ref=e17] [cursor=pointer]:
+          - /url: /products_list
+      - listitem [ref=e18]:
+        - link "Intercept API Request" [ref=e19] [cursor=pointer]:
+          - /url: /fetch-api
+      - listitem [ref=e20]:
+        - link "Visual Testing - GIF Page" [ref=e21] [cursor=pointer]:
+          - /url: /visual
+      - listitem [ref=e22]:
+        - link "Forms" [ref=e23] [cursor=pointer]:
+          - /url: "#homeSubmenu"
+      - listitem [ref=e24]:
+        - link "Buttons" [ref=e25] [cursor=pointer]:
+          - /url: "#pageSubmenu"
+      - listitem [ref=e26]:
+        - link "New Tab / Window" [ref=e27] [cursor=pointer]:
+          - /url: "#browserSubmenu"
+      - listitem [ref=e28]:
+        - link "Btn actions" [ref=e29] [cursor=pointer]:
+          - /url: "#actionsSubmenu"
+      - listitem [ref=e30]:
+        - link "Tables" [ref=e31] [cursor=pointer]:
+          - /url: "#tables"
+      - listitem [ref=e32]:
+        - link "Dropdowns" [ref=e33] [cursor=pointer]:
+          - /url: /dropdowns
+      - listitem [ref=e34]:
+        - link "Iframes" [ref=e35] [cursor=pointer]:
+          - /url: /iframe
+      - listitem [ref=e36]:
+        - link "Alerts" [ref=e37] [cursor=pointer]:
+          - /url: /alerts
+      - listitem [ref=e38]:
+        - link "File Upload" [ref=e39] [cursor=pointer]:
+          - /url: /file-upload
+      - listitem [ref=e40]:
+        - link "Date Pickers" [ref=e41] [cursor=pointer]:
+          - /url: /calendar
+      - listitem [ref=e42]:
+        - link "Loader" [ref=e43] [cursor=pointer]:
+          - /url: /loader
+      - listitem [ref=e44]:
+        - link "Pagination" [ref=e45] [cursor=pointer]:
+          - /url: /pagination
+    - list [ref=e46]:
+      - listitem [ref=e47]:
+        - link "RV - Website" [ref=e48] [cursor=pointer]:
+          - /url: https://razvanvancea.ro/
+      - listitem [ref=e49]:
+        - link "Let's connect - LinkedIn" [ref=e50] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/razvanvancea/
+      - listitem [ref=e51]:
+        - link "Learn with RV - YouTube" [ref=e52] [cursor=pointer]:
+          - /url: https://youtube.com/learnwithrv
+  - generic [ref=e53]:
+    - navigation [ref=e54]:
+      - generic [ref=e55]:
+        - button [ref=e56] [cursor=pointer]
+        - list [ref=e61]:
+          - listitem [ref=e62]:
+            - link "Home" [ref=e63] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e64]:
+            - link "Contact" [ref=e65] [cursor=pointer]:
+              - /url: /contact-us
+    - heading "CHALLENGE - Spot the BUGS!" [level=2] [ref=e66]
+    - generic [ref=e67]: This page contains at least 15 bugs. How many of them can you spot?
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e70]: First Name
+        - textbox "First Name" [ref=e71]:
+          - /placeholder: Enter first name
+      - generic [ref=e72]:
+        - generic [ref=e73]: Last Name*
+        - textbox "Last Name* Phone nunber* Country" [ref=e74]:
+          - /placeholder: Enter last name
+          - text: Tester
+        - generic [ref=e75]: "Note: All the fields marked with * are mandatory"
+      - generic [ref=e76]:
+        - generic [ref=e77]: Phone nunber*
+        - textbox "Enter phone number" [ref=e78]: "0412345678"
+        - generic [ref=e79]: "Phone length validation: at least 10 digits"
+      - generic [ref=e80]:
+        - generic [ref=e81]: Country
+        - combobox [ref=e82]:
+          - option "Select a country..." [selected]
+          - option "Afghanistan"
+          - option "Albania"
+          - option "Algeria"
+          - option "American Samoa"
+          - option "Andorra"
+          - option "Angola"
+          - option "Anguilla"
+          - option "Antigua & Barbuda"
+          - option "Argentina"
+          - option "Armenia"
+          - option "Aruba"
+          - option "Australia"
+          - option "Austria"
+          - option "Azerbaijan"
+          - option "Bahamas"
+          - option "Bahrain"
+          - option "Bangladesh"
+          - option "Barbados"
+          - option "Belarus"
+          - option "Belgium"
+          - option "Belize"
+          - option "Benin"
+          - option "Bermuda"
+          - option "Bhutan"
+          - option "Bolivia"
+          - option "Bonaire"
+          - option "Bosnia & Herzegovina"
+          - option "Botswana"
+          - option "Brazil"
+          - option "British Indian Ocean Ter"
+          - option "Brunei"
+          - option "Bulgaria"
+          - option "Burkina Faso"
+          - option "Burundi"
+          - option "Cambodia"
+          - option "Cameroon"
+          - option "Canada"
+          - option "Canary Islands"
+          - option "Cape Verde"
+          - option "Cayman Islands"
+          - option "Central African Republic"
+          - option "Chad"
+          - option "Channel Islands"
+          - option "Chile"
+          - option "China"
+          - option "Christmas Island"
+          - option "Cocos Island"
+          - option "Colombia"
+          - option "Comoros"
+          - option "Congo"
+          - option "Cook Islands"
+          - option "Costa Rica"
+          - option "Cote DIvoire"
+          - option "Croatia"
+          - option "Cuba"
+          - option "Curacao"
+          - option "Cyprus"
+          - option "Czech Republic"
+          - option "Denmark"
+          - option "Djibouti"
+          - option "Dominica"
+          - option "Dominican Republic"
+          - option "East Timor"
+          - option "Ecuador"
+          - option "Egypt"
+          - option "El Salvador"
+          - option "Equatorial Guinea"
+          - option "Eritrea"
+          - option "Estonia"
+          - option "Ethiopia"
+          - option "Falkland Islands"
+          - option "Faroe Islands"
+          - option "Fiji"
+          - option "Finland"
+          - option "France"
+          - option "French Guiana"
+          - option "French Polynesia"
+          - option "French Southern Ter"
+          - option "Gabon"
+          - option "Gambia"
+          - option "Georgia"
+          - option "Germany"
+          - option "Ghana"
+          - option "Gibraltar"
+          - option "Great Britain"
+          - option "Greece"
+          - option "Greenland"
+          - option "Grenada"
+          - option "Guadeloupe"
+          - option "Guam"
+          - option "Guatemala"
+          - option "Guinea"
+          - option "Guyana"
+          - option "Haiti"
+          - option "Hawaii"
+          - option "Honduras"
+          - option "Hong Kong"
+          - option "Hungary"
+          - option "Iceland"
+          - option "Indonesia"
+          - option "India"
+          - option "Iran"
+          - option "Iraq"
+          - option "Ireland"
+          - option "Isle of Man"
+          - option "Israel"
+          - option "Italy"
+          - option "Jamaica"
+          - option "Japan"
+          - option "Jordan"
+          - option "Kazakhstan"
+          - option "Kenya"
+          - option "Kiribati"
+          - option "Korea North"
+          - option "Korea South"
+          - option "Kuwait"
+          - option "Kyrgyzstan"
+          - option "Laos"
+          - option "Latvia"
+          - option "Lebanon"
+          - option "Lesotho"
+          - option "Liberia"
+          - option "Libya"
+          - option "Liechtenstein"
+          - option "Lithuania"
+          - option "Luxembourg"
+          - option "Macau"
+          - option "Macedonia"
+          - option "Madagascar"
+          - option "Malaysia"
+          - option "Malawi"
+          - option "Maldives"
+          - option "Mali"
+          - option "Malta"
+          - option "Marshall Islands"
+          - option "Martinique"
+          - option "Mauritania"
+          - option "Mauritius"
+          - option "Mayotte"
+          - option "Mexico"
+          - option "Midway Islands"
+          - option "Moldova"
+          - option "Monaco"
+          - option "Mongolia"
+          - option "Montserrat"
+          - option "Morocco"
+          - option "Mozambique"
+          - option "Myanmar"
+          - option "Nambia"
+          - option "Nauru"
+          - option "Nepal"
+          - option "Netherland Antilles"
+          - option "Netherlands (Holland, Europe)"
+          - option "Nevis"
+          - option "New Caledonia"
+          - option "New Zealand"
+          - option "Nicaragua"
+          - option "Niger"
+          - option "Nigeria"
+          - option "Niue"
+          - option "Norfolk Island"
+          - option "Norway"
+          - option "Oman"
+          - option "Pakistan"
+          - option "Palau Island"
+          - option "Palestine"
+          - option "Panama"
+          - option "Papua New Guinea"
+          - option "Paraguay"
+          - option "Peru"
+          - option "Philippines"
+          - option "Pitcairn Island"
+          - option "Poland"
+          - option "Portugal"
+          - option "Puerto Rico"
+          - option "Qatar"
+          - option "Republic of Montenegro"
+          - option "Republic of Serbia"
+          - option "Reunion"
+          - option "Romania"
+          - option "Russia"
+          - option "Rwanda"
+          - option "St Barthelemy"
+          - option "St Eustatius"
+          - option "St Helena"
+          - option "St Kitts-Nevis"
+          - option "St Lucia"
+          - option "St Maarten"
+          - option "St Pierre & Miquelon"
+          - option "St Vincent & Grenadines"
+          - option "Saipan"
+          - option "Samoa"
+          - option "Samoa American"
+          - option "San Marino"
+          - option "Sao Tome & Principe"
+          - option "Saudi Arabia"
+          - option "Senegal"
+          - option "Seychelles"
+          - option "Sierra Leone"
+          - option "Singapore"
+          - option "Slovakia"
+          - option "Slovenia"
+          - option "Solomon Islands"
+          - option "Somalia"
+          - option "South Africa"
+          - option "Spain"
+          - option "Sri Lanka"
+          - option "Sudan"
+          - option "Suriname"
+          - option "Swaziland"
+          - option "Sweden"
+          - option "Switzerland"
+          - option "Syria"
+          - option "Tahiti"
+          - option "Taiwan"
+          - option "Tajikistan"
+          - option "Tanzania"
+          - option "Thailand"
+          - option "Togo"
+          - option "Tokelau"
+          - option "Tonga"
+          - option "Trinidad & Tobago"
+          - option "Tunisia"
+          - option "Turkey"
+          - option "Turkmenistan"
+          - option "Turks & Caicos Is"
+          - option "Tuvalu"
+          - option "Uganda"
+          - option "United Kingdom"
+          - option "Ukraine"
+          - option "United Arab Emirates"
+          - option "United States of America"
+          - option "Uruguay"
+          - option "Uzbekistan"
+          - option "Vanuatu"
+          - option "Vatican City State"
+          - option "Venezuela"
+          - option "Vietnam"
+          - option "Virgin Islands (Brit)"
+          - option "Virgin Islands (USA)"
+          - option "Wake Island"
+          - option "Wallis & Futana Is"
+          - option "Yemen"
+          - option "Zaire"
+          - option "Zambia"
+          - option "Zimbabwe"
+      - generic [ref=e83]:
+        - generic [ref=e84]: Email address*
+        - textbox "Enter email" [ref=e85]: valid.user@datacom.com
+      - generic [ref=e86]:
+        - generic [ref=e87]: Password*
+        - textbox "Password" [active] [ref=e88]: Pswd123!
+        - generic [ref=e89]: "Psw length validation: [6,20] characters"
+      - generic [ref=e90]:
+        - checkbox "I agree with the terms and conditions" [disabled] [ref=e91]
+        - generic [ref=e92]: I agree with the terms and conditions
+      - button "Register" [ref=e93] [cursor=pointer]
+```
