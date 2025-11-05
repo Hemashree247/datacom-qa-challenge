@@ -1,0 +1,34 @@
+# azure-pipelines.yml
+
+trigger:
+- main # Run this pipeline whenever a change is merged into the 'main' branch
+
+pool:
+  vmImage: 'ubuntu-latest' # Use a Linux environment to run the tests
+
+steps:
+- task: NodeTool@0
+  displayName: 'Install Node.js'
+  inputs:
+    versionSpec: 'lts/*' # Install the latest LTS version of Node.js
+
+- script: |
+    npm install
+  displayName: 'Install Project Dependencies'
+
+- script: |
+    npx playwright install --with-deps
+  displayName: 'Install Playwright Browsers'
+
+- script: |
+    npx playwright test --reporter=junit
+  displayName: 'Run Playwright Tests'
+  # The --reporter=junit is used to generate a standard XML report that ADO can read
+
+- task: PublishTestResults@2
+  condition: always() # Publish results even if tests fail
+  displayName: 'Publish Test Results to ADO'
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/junit.xml' # Playwright generates this report file
+    failTaskOnFailedTests: true # Fail the pipeline if any test fails
